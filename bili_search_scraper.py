@@ -294,11 +294,11 @@ def main():
 
 if __name__ == "__main__":
     # ====== 手动修改搜索关键词 ======
-    keyword = "六级"
-    pages = 3
-    out = "六级_搜索.csv"
-    page_size = 30
-    proxy = "http://127.0.0.1:7897"
+    keyword = "Python" # 搜索关键词
+    pages = 3 # 爬取页数
+    out = f"{keyword}_搜索.csv" # 输出的文件名
+    page_size = 30 # 每页数量（默认30）
+    proxy = None # 如不使用代理，设为 None
 
     cookie = load_cookie(None)
 
