@@ -184,3 +184,4 @@ cython_debug/
 cookie.txt
 *.cookie
 .env
+*.csv
