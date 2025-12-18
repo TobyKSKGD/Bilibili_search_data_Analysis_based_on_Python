@@ -39,3 +39,23 @@ if __name__ == "__main__":
 在 `bili_search_scraper.py` 的同一路径下，新建一个文本文件，名字一定要叫 `cookie.txt`，将复制的 Cookie 值粘贴到 cookie.txt 中。
 
 ![](./pictures/b_2.png)
+
+### {keyword}_搜索.csv
+
+输出的表格参数含义如下：
+
+- `title` —— 视频标题
+- `author` —— UP 主名称
+- `bvid` —— 视频唯一 ID
+- `aid` —— 旧版视频 ID
+- `pub_ts` —— 发布时间（时间戳）
+- `pub_time` —— 发布时间（可读格式）
+- `duration` —— 视频时长
+- `danmaku` —— 弹幕数
+- `like` —— 点赞数
+- `view` —— 播放量
+- `favorite` —— 收藏数
+- `type_name` —— 视频分区
+- `tag` —— 标签信息
+- `description` —— 视频简介
+- `link` —— 视频直链
