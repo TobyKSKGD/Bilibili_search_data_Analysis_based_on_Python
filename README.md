@@ -3,7 +3,18 @@
 
 ## Getting Start
 
-### bili_search_scraper.py
+项目的流程演示可以直接使用 `demonstration.ipynb` 进行查看。
+
+**参考后文 bili_search_scraper.py 中的 cookie.txt 的创建方法【否则无法运行脚本！】**。按需修改第一个 Python 单元格，其他按需运行各个代码单元格即可：
+
+```python
+# -------------设置搜索参数-----------------
+keyword = "深度学习" # 搜索关键词
+pages = 30 # 搜索页数
+page_size = 30 # 每页结果数量(默认30)
+```
+
+## bili_search_scraper.py
 
 爬取 B 站搜索数据内容的脚本为 `bili_search_scraper.py`。
 
@@ -28,7 +39,7 @@ if __name__ == "__main__":
 - `proxy`：如不使用代理，设为 None
 - `cookie`：注意用户需要自行将自己运行 B 站时浏览器的 Cookie 保存到 `cookie.txt` 中，否则无法运行脚本。【具体的方法参考下文】
 
-#### cookie.txt
+### cookie.txt
 
 首先在浏览器登陆 B 站，在 B 站的随便一个网页中右键 -> 检查，点击右上角的网络图标。
 
@@ -49,7 +60,7 @@ if __name__ == "__main__":
 - `bvid` —— 视频唯一 ID
 - `aid` —— 旧版视频 ID
 - `pub_ts` —— 发布时间（时间戳）
-- `pub_time` —— 发布时间（可读格式）
+- `pub_time` —— 发布时间
 - `duration` —— 视频时长
 - `danmaku` —— 弹幕数
 - `like` —— 点赞数
