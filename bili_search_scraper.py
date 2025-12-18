@@ -267,7 +267,7 @@ def main():
     parser.add_argument("--keyword", required=True, help="搜索关键词")
     parser.add_argument("--pages", type=int, default=3, help="爬取页数")
     parser.add_argument("--page_size", type=int, default=30, help="每页数量（默认30）")
-    parser.add_argument("--out", default="bili_search.csv", help="输出CSV文件名")
+    parser.add_argument("--out", default="search.csv", help="输出CSV文件名")
     parser.add_argument("--cookie", default=None, help="B站Cookie")
 
     parser.add_argument("--proxy", default=None, help="HTTP代理，如 http://127.0.0.1:7897")
