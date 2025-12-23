@@ -70,3 +70,13 @@ if __name__ == "__main__":
 - `tag` —— 标签信息
 - `description` —— 视频简介
 - `link` —— 视频直链
+
+## bilibili_search_top10.py
+
+统计该关键词（在 `main()` 函数中修改）下的出现最多的 UP 主 Top10 柱状图、视频分区（type_name）出现次数 Top10 和标签（tag）出现次数 Top10。
+
+```python
+def main():
+    keyword = "深度学习" # 搜索关键词
+```
+
