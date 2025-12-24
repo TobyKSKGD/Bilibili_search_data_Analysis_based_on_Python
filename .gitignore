@@ -182,6 +182,7 @@ cython_debug/
 
 # secrets
 cookie.txt
+api_key.txt
 *.cookie
 .env
 *.csv

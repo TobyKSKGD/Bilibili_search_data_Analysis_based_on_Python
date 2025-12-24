@@ -119,3 +119,25 @@ output_csv = f"{keyword}_title_word_freq.csv"
    - 防止高频词拆分（collocations=False）
    - 优先水平显示词语（prefer_horizontal=1.0）
 5. 输出效果：Matplotlib 显示词云图，可用于分析关键词在视频标题中的热点词汇分布。
+
+## bilibili_comments.py
+
+B 站视频评论爬取，请按需修改需要爬取的视频 BV 号与最大评论数。结果将会保存在代码同级目录下。
+
+```python
+bvid = "BV1wK2QBPEDv" # 目标视频的 BV 号
+max_comments = 50 # 最大评论数量
+
+cookie = bc.load_cookie()
+session = bc.build_session(cookie=cookie)
+```
+
+## api_comments.py
+
+调用大语言模型（DeepSeek）对评论进行情感分析
+
+请新建 `api_key.txt`，请将自己的密钥填入 `api_key.txt` 文件中。(否则无法调用 DeepSeek)
+
+DeepSeek密钥生成：https://platform.deepseek.com
+
+结果同样会保存在代码同级目录下。
