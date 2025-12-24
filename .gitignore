@@ -190,3 +190,4 @@ api_key.txt
 
 *.txt
 !stopwords.txt
+!requirements.txt
