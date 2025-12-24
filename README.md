@@ -1,6 +1,8 @@
 # Bilibili_search_data_Analysis_based_on_Python
 基于 Python 的 B 站搜索数据分析
 
+项目**所有单独可执行代码**放在 `scripts` 文件夹中。
+
 ## Getting Start
 
 项目的流程演示可以直接使用 `demonstration.ipynb` 进行查看。
@@ -86,6 +88,7 @@ def main():
 
 B站搜索结果标题文本分析
 功能：
+
 1. 从 CSV 中提取 title 保存为 txt
 2. 使用 jieba 分词
 3. 去除停用词和搜索关键词
@@ -102,3 +105,17 @@ stopwords_file = "stopwords.txt"
 output_csv = f"{keyword}_title_word_freq.csv"
 ```
 
+## bilibili_title_wordcloud.py
+
+脚本功能说明：
+
+1. 读取指定关键词的标题词频 CSV 文件（例如：{keyword}_title_word_freq.csv）。
+2. 根据词频数据生成中文词云图，可视化视频标题中高频词。
+3. 自动选择系统可用中文字体，解决中文显示乱码或缺字问题。
+4. 可自定义词云参数：
+   - 背景颜色（background_color）
+   - 图像尺寸（width, height）
+   - 最大词数（max_words）
+   - 防止高频词拆分（collocations=False）
+   - 优先水平显示词语（prefer_horizontal=1.0）
+5. 输出效果：Matplotlib 显示词云图，可用于分析关键词在视频标题中的热点词汇分布。
