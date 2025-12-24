@@ -104,7 +104,6 @@ def plot_bar(df, x_col, y_col, title, xlabel, ylabel):
 
     plt.xticks(rotation=45, ha='right')
 
-    # 在柱子上方标注数值
     for bar in bars:
         height = bar.get_height()
         plt.text(
@@ -124,7 +123,7 @@ def plot_bar(df, x_col, y_col, title, xlabel, ylabel):
 # 5. 主程序入口
 # =========================
 def main():
-    keyword = "深度学习"
+    keyword = "深度学习" # 搜索关键词
 
     set_chinese_font()
 

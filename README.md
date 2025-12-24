@@ -80,3 +80,25 @@ def main():
     keyword = "深度学习" # 搜索关键词
 ```
 
+## bilibili_title_wordfreq.py
+
+分词、统计标题词频。
+
+B站搜索结果标题文本分析
+功能：
+1. 从 CSV 中提取 title 保存为 txt
+2. 使用 jieba 分词
+3. 去除停用词和搜索关键词
+4. 统计词频
+5. 输出 Top10 并保存完整词频 CSV
+
+**参数设置**：
+
+```python
+keyword = "深度学习"
+csv_file = f"{keyword}_搜索.csv"
+title_txt = f"{keyword}_titles.txt"
+stopwords_file = "stopwords.txt"
+output_csv = f"{keyword}_title_word_freq.csv"
+```
+
